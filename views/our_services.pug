@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Services - Marioclub
+    link(rel="stylesheet", href="index.css")
+  body
+    header
+      h1 Marioclub
+
+    section.banner
+      img(src="banner.png", alt="Service Banner")
+      .welcome
+        h2 Our Services
+          br
+          span Discover what we offer
+
+    nav.main-nav
+      ul
+        li
+          a(href="/", class="join") Home
+        li
+          a(href="/services") Our Services
+        li
+          a(href="/contact") Contact us
+
+    main
+      section.service-list
+        .service-item
+          h2 Service One
+          p Description of Service One. We provide this service with exceptional quality and attention to detail.
+        .service-item
+          h2 Service Two
+          p Description of Service Two. Find out how this service can benefit you and meet your needs.
+        .service-item
+          h2 Service Three
+          p Description of Service Three. Learn more about what makes this service stand out.
+
+      section.cta
+        h2 Interested in Our Services?
+        p Get in touch with us to find out how we can assist you.
+        form(action="/contact", method="post")
+          input(type="email", name="email", placeholder="Type your email & hit enter", required)
+          button(type="submit") Get in Touch
+
+    footer.footer
+      p.copyright Copyright 2024 Marioclub

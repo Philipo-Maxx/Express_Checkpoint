@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Contact Us - Marioclub
+    link(rel="stylesheet", href="index.css")
+  body
+    header
+      h1 Marioclub
+
+    section.banner
+      img(src="banner.png", alt="Contact Us Banner")
+      .welcome
+        h2 Get in Touch
+          br
+          span Marioclub
+
+    nav.main-nav
+      ul
+        li
+          a(href="/", class="join") Home
+        li
+          a(href="/services") Services
+        li
+          a(href="/contact") Contact
+
+    main
+      section.contact-info
+        h2 Contact Information
+        p If you have any questions or need assistance, please feel free to reach out to us through the contact form or using the information below.
+        address
+          p Email: <a href="mailto:support@marioclub.com">support@marioclub.com</a>
+          p Phone: <a href="tel:+1234567890">+123 456 7890</a>
+
+      section.contact-form
+        h2 Send Us a Message
+        p We’d love to hear from you! Please fill out the form below and we’ll get back to you as soon as possible.
+        form(action="/submit-form", method="post")
+          label(for="name") Name
+          input(type="text", id="name", name="name", placeholder="Your Name", required)
+
+          label(for="email") Email
+          input(type="email", id="email", name="email", placeholder="Your Email", required)
+
+          label(for="message") Message
+          textarea(id="message", name="message", placeholder="Your Message", rows="4", required)
+
+          button(type="submit") Send Message
+
+    section.cta
+      h2 Join Today!
+      p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempore dolorem minus corrupti aliquam quidem enim quaerat incidunt? Possimus fugiat a et inventore vero dolore! Reiciendis quam nam nemo debitis!
+      form
+        input(type="email", name="email", placeholder="Type email & hit enter", required)
+        button(type="submit") Join Now
+
+    footer.footer
+      p.copyright Copyright 2024 Marioclub

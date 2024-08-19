@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="index.css")
+  body
+    header
+      h1 Marioclub
+
+    section.banner
+      img(src="banner.png", alt="")
+      .welcome
+        h2 Welcome to 
+          br
+          span Marioclub
+
+    nav.main-nav
+      ul
+        li
+          a(href="/", class="join") Home
+        li
+          a(href="/services") Our Services
+        li
+          a(href="/contact-us") Contact us
+
+    main
+      article
+        h2 It's Mario
+        p
+          | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+          | excepturi tempore doloremque officia, obcaecati est, dolorum
+          | exercitationem dolorem nam quisquam molestias quos optio repellat,
+          | assumenda voluptate laborum et culpa veritatis? Lorem ipsum dolor sit,
+          | amet consectetur adipisicing elit. Aliquid quae voluptas, dolorem
+          | minima fugit eos nisi porro alias laborum dolores accusamus incidunt,
+          | quis veniam animi facere temporibus debitis saepe excepturi? Lorem,
+          | ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quia,
+          | consequatur veritatis dignissimos odio illo delectus est nihil odit
+          | voluptates nostrum commodi? Eveniet reiciendis assumenda, veritatis
+          | aspernatur architecto minima quos?
+
+      ul.images
+        li
+          img(src="thumb-1.png", alt="")
+        li
+          img(src="thumb-2.png", alt="")
+
+    section.join
+      h2 Join Today!
+      p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempore dolorem minus corrupti aliquam quidem enim quaerat incidunt? Possimus fugiat a et inventore vero dolore! Reiciendis quam nam nemo debitis!
+      form
+        input(type="email", name="email", placeholder="Type email & hit enter", required)
+
+    footer.footer
+      p.copyright Copyright 2024 Marioclub
